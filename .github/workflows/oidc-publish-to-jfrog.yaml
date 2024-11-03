@@ -1,6 +1,8 @@
 name: "oidc publish to jfrog"
 
 on: [push]
+permissions:
+  id-token: write
 
 jobs:
   build:
