@@ -25,10 +25,10 @@ jobs:
           make build
 
       - name: Set up JDK 17
-          uses: actions/setup-java@v2
-          with:
-            java-version: '17'
-            distribution: 'temurin'  # use 'adopt' or 'zulu' if preferred
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'  # use 'adopt' or 'zulu' if preferred
 
       - name: Deploy to artifactory
         run:
