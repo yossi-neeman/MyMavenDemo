@@ -23,7 +23,13 @@ jobs:
       - name: Build
         run: |
           make build
-          
+
+      - name: Set up JDK 17
+          uses: actions/setup-java@v2
+          with:
+            java-version: '17'
+            distribution: 'temurin'  # use 'adopt' or 'zulu' if preferred
+
       - name: Deploy to artifactory
         run:
           export BUILD_MODULE="yossin-odic-publish-demo"
