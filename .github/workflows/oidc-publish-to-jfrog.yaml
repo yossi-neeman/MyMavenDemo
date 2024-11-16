@@ -36,7 +36,7 @@ jobs:
         run:
           # export BUILD_MODULE="yossin-odic-publish-demo"
           echo "test file " > test.txt
-          jf rt upload "test.txt" yossin_local_generic/oidc-poc-$(date +%Y%m%d%H%M%S) # --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module $BUILD_MODULE
+          jf rt upload "/home/runner/work/MyMavenDemo/MyMavenDemo/target/MyDemo-0.0.1-SNAPSHOT.jar" yossin_local_generic/oidc-poc-$(date +%Y%m%d%H%M%S) # --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module $BUILD_MODULE
 
       - run: echo "🎉 Publish to artifactory."
       - name: Publish Build to Artifactory
