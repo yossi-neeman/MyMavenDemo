@@ -12,7 +12,7 @@ jobs:
         uses: jfrog/setup-jfrog-cli@v4
         env:
           # JFrog platform url (for example: https://acme.jfrog.io)
-          JF_URL: ${{ vars.ARTIFACTORY_URL }}
+          JF_URL: "https://jacloud4236113.jfrogdev.org/"
         with:
           # Name of the OIDC provider as specified on the OIDC integration page in the JFrog Platform
           oidc-provider-name: mymavendemo
