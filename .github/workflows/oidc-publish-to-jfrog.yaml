@@ -37,7 +37,7 @@ jobs:
           
       - name: Push Docker image to Artifactory
         run: |
-          jf rt docker-push yossin-docker-image:latest us1a-my-docker-local
+          jf docker-push yossin-docker-image:latest us1a-my-docker-local
 
 #      - run: echo "🎉 Deploy to artifactory."
 #      - name: Deploy to artifactory
